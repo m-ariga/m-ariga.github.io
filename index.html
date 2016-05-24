@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta description="m-arigaの自己紹介ページです。">
-    <title>m-arigaの自己紹介</title>
+    <title>自己紹介</title>
+    <link rel="stylesheet" href="m-ariga.css">
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
@@ -17,32 +18,36 @@
     <header>
       <nav class="navbar navbar-default">
             <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    
-                </div>
                 <div class="collapse navbar-collapse" id="site-menu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Index</a></li>
-                        <li><a href="#">About</a></li>
+                        <li class="active"><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle=dropdown role="button" aria-expanded="false">
+                                Applications
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">アプリ1</a></li>
+                                <li><a href="#">アプリ2</a></li>
                     </ul>
                 </div>
             </div>
       </nav>
-    </header>
-    <div class="container">
-      <h1>m-ariga</h1>
+      <div id="logo">
       <img src="m-ariga.png" alt="" />
-      <p>プログラミング初心者です。オリジナルサービスを作ることが目標です。</p>
-      <a href="https://github.com/m-ariga" target="_blank">リンク</a>
+      <h1>m-ariga</h1>
     </div>
+    </header>
     
+      <div class="content">
+        <p>プログラミング初心者です。オリジナルサービスを作ることが目標です。</p>
+      　<a href="https://github.com/m-ariga" target="_blank">リンク</a>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2016 m-ariga.</p>
+    </footer>
       
   </body>
 </html>
